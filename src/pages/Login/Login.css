@@ -93,7 +93,7 @@ form button {
    text-decoration: underline;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
    .form {
       padding: 10px 5px;
       width: 340px;
