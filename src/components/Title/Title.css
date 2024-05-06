@@ -1,0 +1,53 @@
+.titleCard {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.titleCard h2 {
+    margin-bottom: 8px;
+}
+
+.titleCard .card-list {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: scroll;
+
+}
+
+.titleCard .card-list::-webkit-scrollbar {
+    display: none;
+}
+
+.card-list img {
+    border-radius: 5px;
+    width: 240px;
+    cursor: pointer;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.card-list .card {
+    position: relative;
+}
+
+.card-list .card p {
+    position: absolute;
+    right: 10px;
+    color: snow;
+    text-decoration: none;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-list .card p{
+        font-size: 14px;
+    }
+    .card-list img{
+        width: 210px;
+    }
+    .titleCard h2{
+        font-size: 22px;
+    }
+}
